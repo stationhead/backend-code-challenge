@@ -1,0 +1,89 @@
+/vendor
+/storage/tmp
+/storage
+/tmp
+Homestead.yaml
+Homestead.json
+node_modules
+ignore
+/log/capistrano.log
+/public/storage
+.env
+MusicKitKey.p8
+apple-music-kit.p8
+*.pem
+.vagrant/
+Vagrantfile
+.DS_store
+*.swp
+*.swo
+tags
+.gitignore.swp
+storage/clockwork/*
+.DS_Store
+_ide_helper.php
+.phpstorm.meta.php
+_ide_helper_models.php
+_ide_helper_redis.php
+# Created by https://www.gitignore.io/api/phpstorm,sublimetext
+### PhpStorm ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+*.iml
+## Directory-based project format:
+.idea/
+# if you remove the above rule, at least ignore the following:
+# User-specific stuff:
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/dictionaries
+# .idea/shelf
+# Sensitive or high-churn files:
+# .idea/dataSources.ids
+# .idea/dataSources.xml
+# .idea/sqlDataSources.xml
+# .idea/dynamic.xml
+# .idea/uiDesigner.xml
+# Gradle:
+# .idea/gradle.xml
+# .idea/libraries
+# Mongo Explorer plugin:
+# .idea/mongoSettings.xml
+## File-based project format:
+*.ipr
+*.iws
+## Plugin-specific files:
+# IntelliJ
+/out/
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+# JIRA plugin
+atlassian-ide-plugin.xml
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+# workspace files are user-specific
+*.sublime-workspace
+# *.sublime-project
+# sftp configuration file
+sftp-config.json
+.DS_Store
+config/deploy/ec2.yml
+/log
+.tags
+.tags1
+
+# Ansible / Terraform
+ansible/*.retry
+.terraform/
+./*.tfstate
+terraform.tfplan
+terraform.tfstate
+ansible/log
+ansible/roles/geerlingguy.*/*

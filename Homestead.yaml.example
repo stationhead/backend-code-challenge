@@ -1,0 +1,58 @@
+---
+# this should be the IP address in your hosts file.
+ip: "192.168.56.101"
+
+# You can increase the memory if you have it available on your machine.
+memory: 2048
+
+# You can increase / decrease this depending on how many cpu cores you have.
+cpus: 2
+
+box: laravel/homestead
+version: 2.2.0
+hostname: stationhead-homestead
+name: stationhead-homestead
+provider: virtualbox
+mariadb: true
+
+# Path to your Public Key.  Chances are youy already have one,
+# but if you generate one, add it here.
+authorize: ~/.ssh/id_rsa.pub
+
+# Path to your Private Key.
+keys:
+    - ~/.ssh/id_rsa
+
+# For the 'map' value, use the full path to the API repo
+folders:
+    - map: "/path-to-your-projects/stationhead/api"
+      to: "/var/www/api"
+      type: nfs
+
+sites:
+    - map: api.stationhead.dev
+      to: "/var/www/api/public"
+      schedule: true 
+
+databases:
+    - stationhead
+    - stationhead_testing
+    - stationhead_logging
+    - stationhead_logging_testing
+    - stationhead_apple_music
+    - stationhead_apple_music_testing
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp
+
+
